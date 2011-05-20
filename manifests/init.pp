@@ -3,7 +3,7 @@ class apt( $http_proxy = undef ) {
 		ensure	=> installed,
 	}
 
-	file { '/etc/apt.conf':
+	file { '/etc/apt/apt.conf':
 		ensure	=> file,
 		owner	=> root,
 		group	=> root,
