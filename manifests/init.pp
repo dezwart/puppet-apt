@@ -1,5 +1,5 @@
 class apt(
-  $http_proxy = hiera('apt::http_proxy', undef)
+  $http_proxy = undef
 ) {
   package { 'apt':
     ensure  => installed,
