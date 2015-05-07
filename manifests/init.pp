@@ -1,4 +1,6 @@
-class apt( $http_proxy = undef ) {
+class apt(
+  $http_proxy = undef
+) {
   package { 'apt':
     ensure  => installed,
   }
